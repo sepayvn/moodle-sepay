@@ -18,7 +18,8 @@
  * Capabilities for sepay enrolment plugin.
  *
  * @package    enrol_sepay
- * @copyright  2010 Petr Skoda {@link http://skodak.org}
+ * @copyright  2025 SePay.vn<your@email.address>
+ * @author     Nguyen Tran Chung<nguyentranchung52th@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

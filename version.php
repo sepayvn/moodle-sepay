@@ -4,8 +4,8 @@
  * SePay enrolment plugin version specification.
  *
  * @package    enrol_sepay
- * @copyright  2025 SePay.vn
- * @author     Nguyen Tran Chung
+ * @copyright  2025 SePay.vn<info@sepay.vn>
+ * @author     Nguyen Tran Chung<nguyentranchung52th@gmail.com>
  * @license    SePay.vn
  */
 

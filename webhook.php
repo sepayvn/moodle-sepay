@@ -21,8 +21,8 @@
  * and sets up the enrolment for that user.
  *
  * @package    enrol_sepay
- * @copyright 2025 SePay.vn<your@email.address>
- * @author     Eugene Venter - based on code by others
+ * @copyright  2025 SePay.vn<your@email.address>
+ * @author     Nguyen Tran Chung<nguyentranchung52th@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

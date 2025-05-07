@@ -18,7 +18,7 @@
  * Capabilities for sepay enrolment plugin.
  *
  * @package    enrol_sepay
- * @copyright  2025 SePay.vn<your@email.address>
+ * @copyright  2025 SePay.vn<info@sepay.vn>
  * @author     Nguyen Tran Chung<nguyentranchung52th@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

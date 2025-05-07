@@ -102,7 +102,7 @@ if ($sepay_data['accountNumber'] !== $bankAccount && $sepay_data['subAccount'] !
 $pattern = $plugin->get_config('pattern', 'sepay');
 
 // Lấy ra user id hoặc order id ví dụ: SE_123456, SE_abcd-efgh
-preg_match('/\b' . $pattern . '-(\d+)-(\d+)/', $content, $matches);
+preg_match('/\b' . $pattern . '(\d+)U(\d+)/', $content, $matches);
 
 // 3. Kiểm tra định dạng code: FIV_course_123456
 if (! isset($matches[0]) && !isset($matches[1])) {

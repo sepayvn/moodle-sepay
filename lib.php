@@ -233,7 +233,7 @@ class enrol_sepay_plugin extends enrol_plugin
                 $qr_bank = $this->get_config('bank');
                 $qr_template = $this->get_config('template');
                 $qr_pattern = $this->get_config('pattern', 'sepay');
-                $qr_content = $qr_pattern . '-' .  $course->id . '-' . $USER->id;
+                $qr_content = $qr_pattern . $course->id . 'U' . $USER->id;
 
                 // Include the SePay enrolment form template.
                 include($CFG->dirroot . '/enrol/sepay/enrol.html');

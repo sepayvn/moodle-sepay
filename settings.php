@@ -58,7 +58,7 @@ if ($ADMIN->fulltree) {
         if (!$bank['supported']) {
             continue;
         }
-        $bank_options[$bank['code']] = $bank['short_name'] . ' - ' . $bank['name'];
+        $bank_options[$bank['short_name']] = $bank['short_name'] . ' - ' . $bank['name'];
     }
 
     $settings->add(new admin_setting_configselect(

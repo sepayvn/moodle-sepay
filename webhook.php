@@ -77,7 +77,7 @@ if (!is_array($sepay_data) || empty($sepay_data['code'])) {
     exit;
 }
 
-$code = $sepay_data['code'];
+$content = $sepay_data['content'];
 $transferAmount = $sepay_data['transferAmount'];
 $bankAccount = $plugin->get_config('account');
 
@@ -101,10 +101,13 @@ if ($sepay_data['accountNumber'] !== $bankAccount && $sepay_data['subAccount'] !
 
 $pattern = $plugin->get_config('pattern', 'sepay');
 
+// Lấy ra user id hoặc order id ví dụ: SE_123456, SE_abcd-efgh
+preg_match('/\b' . $pattern . '-(\d+)-(\d+)/', $content, $matches);
+
 // 3. Kiểm tra định dạng code: FIV_course_123456
-if (!preg_match('/^' . $pattern . '_(\d+)_(\d+)$/', $code, $matches)) {
+if (! isset($matches[0]) && !isset($matches[1])) {
     http_response_code(200);
-    echo json_encode(['message' => 'Ignored: code does not match ' . $pattern . ' pattern']);
+    echo json_encode(['message' => 'Ignored: Invalid code format']);
     exit;
 }
 

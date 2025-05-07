@@ -16,7 +16,7 @@
 
    Nhập các thông tin Webhook `Sepay`
 
-   `API Key`: _Xem phần lấy API Key ở bên dưới_
+   `API Key`: Xem phần **[Thêm Webhook](#thêm-webhook)** ở bên dưới
 
    `Pattern`: Là tiền tố để nhận diện code thanh toán được cấu hình tại `Cấu hình công ty` -> `Cấu hình chung` -> [`Cấu trúc mã thanh toán`](https://my.sepay.vn/company/configuration)
 

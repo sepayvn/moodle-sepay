@@ -1,0 +1,98 @@
+<style>
+  .bank-card {
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .card-body {
+    display: flex;
+  }
+
+  .qr-section {
+    width: 40%;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .qr-section img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .info-section {
+    width: 60%;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .info-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .info-row {
+    margin-bottom: 10px;
+  }
+
+  .info-label {
+    font-weight: bold;
+    color: #555;
+    display: inline-block;
+    min-width: 110px;
+  }
+
+  .info-value {
+    color: #222;
+  }
+</style>
+
+<div class="bank-card">
+  <div class="card-header">Quét mã QR hoặc chuyển khoản theo thông tin dưới đây để tự động ghi danh khóa học này</div>
+  <div class="card-body">
+    <div class="qr-section">
+      <img
+        decoding="async"
+        id="img_qr_code"
+        class="img-fluid rounded"
+        src="https://qr.sepay.vn/img?acc=<?php echo $qr_account; ?>&bank=<?php echo $qr_bank; ?>&amount=<?php echo $cost; ?>&des=<?php echo $qr_content; ?>&template=<?php echo $qr_template; ?>"
+        alt="QR Code"
+      />
+    </div>
+    <div class="info-section">
+      <h4>Thông Tin Chuyển Khoản</h4>
+      <div class="info-row">
+        <span class="info-label">Ngân hàng:</span>
+        <span class="info-value"><?php echo $qr_bank; ?></span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Số tài khoản:</span>
+        <span class="info-value"><?php echo $qr_account; ?></span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Số tiền:</span>
+        <span class="info-value"><?php echo $cost; ?></span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Nội dung:</span>
+        <span class="info-value"><?php echo $qr_content; ?></span>
+      </div>
+    </div>
+  </div>
+</div>

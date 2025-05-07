@@ -16,9 +16,9 @@
 
    Nhập các thông tin Webhook `Sepay`
 
-   `API Key`: _Xem cách lấy API Key ở bên dưới_
+   `API Key`: _Xem phần lấy API Key ở bên dưới_
 
-   `Pattern`: Tính năng nhận diện code thanh toán được cấu hình tại `Cấu hình công ty` -> `Cấu hình chung` -> [`Cấu trúc mã thanh toán`](https://my.sepay.vn/company/configuration)
+   `Pattern`: Là tiền tố để nhận diện code thanh toán được cấu hình tại `Cấu hình công ty` -> `Cấu hình chung` -> [`Cấu trúc mã thanh toán`](https://my.sepay.vn/company/configuration)
 
    Chọn các tùy chọn phù hợp và nhấn Save changes để lưu cấu hình.
 
@@ -38,10 +38,11 @@
 
    Sau đó nhấn `Add method` để hoàn tất.
 
-# API Key
+# Thêm Webhook
 
 Cấu hình webhook SePay bằng cách
 
 1. Truy cập https://my.sepay.vn/webhooks
 2. Nhấn nút `Thêm Webhooks`
-3. Ở phần `Cấu hình chứng thực WebHooks` > Kiểu chứng thực chọn `API Key` > API Key là 1 đoạn ký tự, bạn có thể tự nhập hoặc dùng công cụ bất kỳ sinh ngẫu nhiên
+3. Mục `Thuộc tính WebHooks`: https://ten_mien_cua_ban.com/enrol/sepay/webhook.php
+4. Mục `Cấu hình chứng thực WebHooks`: Kiểu chứng thực chọn `API Key` > API Key là 1 đoạn ký tự, bạn có thể tự nhập hoặc dùng công cụ bất kỳ sinh ngẫu nhiên
